@@ -1,0 +1,7 @@
+form div {
+    padding-top: 5px;
+}
+form .invalid {
+    color: crimson;
+    font-size: larger;
+}
