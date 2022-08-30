@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Počítač: 127.0.0.1
+- Vytvořeno: Úte 30. srp 2022, 14:55
+- Verze serveru: 10.4.24-MariaDB
+- Verze PHP: 8.1.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="animals" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="animals">
+                CREATE TABLE `animals` (
+                  `PetID` int(11) NOT NULL AUTO_INCREMENT,
+                  `Name` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_czech_ci DEFAULT NULL,
+                  `Telephone` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_czech_ci DEFAULT NULL,
+                  `Species` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_czech_ci DEFAULT NULL,
+                  `Gender` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_czech_ci DEFAULT NULL,
+                  `Agreement` bit(1) DEFAULT b&#039;0&#039;,
+                  PRIMARY KEY (`PetID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Databáze: 'animals'
+    -->
+    <database name="animals">
+        <!-- Tabulka animals -->
+        <table name="animals">
+            <column name="PetID">1</column>
+            <column name="Name">Bak</column>
+            <column name="Telephone">+420123456789</column>
+            <column name="Species">Pes</column>
+            <column name="Gender">samec</column>
+            <column name="Agreement">1</column>
+        </table>
+    </database>
+</pma_xml_export>

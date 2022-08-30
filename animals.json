@@ -1,0 +1,9 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"animals"},
+{"type":"table","name":"animals","database":"animals","data":
+[
+{"PetID":"1","Name":"Bak","Telephone":"+420123456789","Species":"Pes","Gender":"samec","Agreement":"1"}
+]
+}
+]
